@@ -11,10 +11,10 @@ Description of the methods offered by this class:
 > *pin*: the pin where the motor is connected.  
 -----------------  
 **```ContiniousMotor::ContiniousMotor(int pin_1, int pin_2, int pin_E)```**
-> Alternate initializer. Use PWM digital outputs (if you want to control the speed).  
+> Alternate initializer. Use PWM digital outputs (if you want to control the direction).  
 > *parameter*: the pins where the motor controller is connected.  
-> *pin_1* and *pin_2* to control the speed and direction.  
-> *pin_E* to enable/disable the motor.  
+> *pin_1* and *pin_2*: pin used to control the speed and direction.  
+> *pin_E*: pin used to enable/disable the motor.  
 -----------------  
 **```void ContiniousMotor::step(int step)```**  
 > Start the motor for a given duration.  
