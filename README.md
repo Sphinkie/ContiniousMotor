@@ -1,8 +1,6 @@
 # ContiniousMotor
-Arduino library for continious motor.  
-This library can be used by any Arduino sketch using a classic motor with continious power supply.
-  
-ContiniousMotor give function to manage a DC motor (Brushed motor).
+Arduino library to manage a continious motor (Brushed motor)..  
+This library can be used by any Arduino sketch using a classic motor with DC power supply.
 Speed can be negative, for reverse engine. (-255 .. 255)
 
 ## API description
@@ -10,17 +8,17 @@ Description of the methods offered by this class:
   
 **```ContiniousMotor::ContiniousMotor(int pin)```**  
 > Initialize the object. Use a PWM digital output.  
-> *parameter*: the pin where the motor is connected.  
+> *pin*: the pin where the motor is connected.  
 -----------------  
 **```ContiniousMotor::ContiniousMotor(int pin_1, int pin_2, int pin_E)```**
 > Alternate initializer. Use PWM digital outputs (if you want to control the speed).  
 > *parameter*: the pins where the motor controller is connected.  
-> *pin_1* and *pin_*2 to control the speed and direction.  
+> *pin_1* and *pin_2* to control the speed and direction.  
 > *pin_E* to enable/disable the motor.  
 -----------------  
 **```void ContiniousMotor::step(int step)```**  
 > Start the motor for a given duration.  
-> see: http://boutique.semageek.com/fr/45-sn754410-compatible-l293d.html  
+> *step* : duration in ms.  
 -----------------  
 **```void ContiniousMotor::startEngine()```**  
 > Start the motor.  
@@ -30,9 +28,11 @@ Description of the methods offered by this class:
 -----------------  
 **```void ContiniousMotor::setSpeed(int speed)```**  
 > Change the stored speed (not the actual speed of the motor: for this, use changeSpeed).  
+> *speed* : speed value (0..255).  
 -----------------  
 **```void ContiniousMotor::changeSpeed(int speed)```**  
 > Change the actual speed of the motor.  
+> *speed* : speed value (0..255).  
 -----------------  
 **```void ContiniousMotor::reserseSpeed()```**  
 > Reverse the speed of the motor.  
