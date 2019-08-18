@@ -67,13 +67,13 @@ Restart the motor, with the last memorized speed.
 ```c++
 void ContiniousMotor::accelerate()
 ```
-Accelerate the motor speed.
+Increase the motor speed.
 
 ---
 ```c++
 void ContiniousMotor::slowDown()
 ```
-Slow down the motor speed.
+Decrease the motor speed.
 
 ---
 ```c++
