@@ -1,5 +1,7 @@
 # ContiniousMotor
-Arduino library to manage a continious motor (Brushed motor)..  
+
+This is an Arduino library to manage a continious motor (Brushed motor).
+
 This library can be used by any Arduino sketch using a classic motor with DC power supply.
 Speed can be negative, for reverse engine.
 
