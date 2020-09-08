@@ -1,4 +1,4 @@
-# ContiniousMotor
+# Continious Motor Arduino Library
 
 This is an Arduino library to manage a **continious motor** (aka *Brushed motor*).
 
