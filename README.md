@@ -1,10 +1,8 @@
 # ContiniousMotor
 
-This is an Arduino library to manage a continious motor (Brushed motor).
+This is an Arduino library to manage a **continious motor** (aka *Brushed motor*).
 
-This library can be used by any Arduino sketch using a classic motor with DC power supply.
-Speed can be negative, for reverse engine.
+This library can be used by any Arduino sketch using a classic motor with DC power supply.  
+Speed value can be negative, for reverse engine retation.
 
-See the API description of the methods offered by this library in the attached file:  [API_description.md](API_description.md).  
-
-Available on GitHub @Sphinkie/ContiniousMotor
+Find more about the methods offered by this library in the [API Description](API_description.md).  
